@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_news_app_ui/src/screens/community_screen.dart';
 import 'package:flutter_news_app_ui/src/screens/home_screen.dart';
+import 'package:flutter_news_app_ui/src/screens/select_interest_screen.dart';
 import 'package:flutter_news_app_ui/src/screens/setting_screen.dart';
 
 class MyApp extends StatelessWidget {
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
           showUnselectedLabels: true,
         ),
       ),
-      home: const NewsApp(),
+      home: const SelectInterestScreen(),
     );
   }
 }
