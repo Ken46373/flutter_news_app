@@ -9,8 +9,6 @@ class SelectInterestScreen extends StatefulWidget {
 
 class _SelectInterestScreenState extends State<SelectInterestScreen> {
 
-  bool isSelected = false;
-
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
@@ -20,15 +18,15 @@ class _SelectInterestScreenState extends State<SelectInterestScreen> {
           padding: const EdgeInsets.all(23.0),
           child: Stack(
             children: [
-              Align(
+              const Align(
                 alignment: Alignment(0, -0.8),
-                child: const Text(
+                child: Text(
                   'Pick your interests.',
                   style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w800, color: Colors.black),
                 ),
               ),
               Align(
-                alignment: Alignment(0, -0.2),
+                alignment: const Alignment(0, -0.2),
                 child: Container(
                   width: double.infinity,
                   child: Wrap(
@@ -54,16 +52,16 @@ class _SelectInterestScreenState extends State<SelectInterestScreen> {
                 ),
               ),
               Align(
-                alignment: Alignment(0, 0.8),
+                alignment: const Alignment(0, 0.8),
                 child: Container(
                   width: size.width * 0.8,
                   height: 50.0,
-                  padding: EdgeInsets.all(10.0),
-                  decoration: BoxDecoration(
+                  padding: const EdgeInsets.all(10.0),
+                  decoration: const BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(18.0)),
                     color: Colors.black,
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       'Next ▶',
                       style: TextStyle(
